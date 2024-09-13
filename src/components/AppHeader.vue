@@ -1,31 +1,40 @@
-<script>
-export default {
-  data() {
-    return { 
-      message: 'Template Vite + Vue'
-    }
-  }
-}
-</script>
-
 <template>
-  <header>
-    <h1>
-      {{ message }}
-    </h1>
-  </header>
-</template>
-
-<style lang="scss" scoped>
-@use '../assets/scss/partials/variables' as *;
-
-header {
-  background-color: $mainBgColor;
-  text-align: center;
-  padding: 20px 0;
-}
-
-h1 {
-  color: $mainColor;
-}
-</style>
+    <header>
+      <nav>
+        <img src="" alt="DC Logo" class="logo">
+        <ul>
+          <li v-for="item in menuItems" :key="item">{{ item }}</li>
+        </ul>
+      </nav>
+    </header>
+  </template>
+  
+  <script>
+  export default {
+    data() {
+      return {
+        menuItems: ['Characters', 'Comics', 'Movies', 'TV', 'Games', 'Collectibles', 'Videos', 'Fans', 'News', 'Shop']
+      };
+    }
+  };
+  </script>
+  
+  <style scoped>
+  .logo {
+    width: 100px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  li {
+    cursor: pointer;
+  }
+  </style>
