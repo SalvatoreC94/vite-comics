@@ -1,7 +1,7 @@
 <template>
     <header>
       <nav>
-        <img src="" alt="DC Logo" class="logo">
+        <img src="..\assets\img\dc-logo.png" alt="DC Logo" class="logo">
         <ul>
           <li v-for="item in menuItems" :key="item">{{ item }}</li>
         </ul>
@@ -21,7 +21,7 @@
   
   <style scoped>
   .logo {
-    width: 100px;
+    width: 70px;
   }
   nav {
     display: flex;
