@@ -6,7 +6,7 @@
       </section>
       <section class="container-merch">
       <!-- inserire immanigi -->
-        <h1>--&gt Qui vanno aggiunti i loghi &lt--</h1>
+        <h1> Qui vanno aggiunti i loghi </h1>
       </section>
       
     </main>
@@ -32,22 +32,10 @@
     position: relative;
   }
   
-  .main-content::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* background-image: url('../assets/img/'); */
-    background-size: cover;
-    background-repeat: no-repeat;
-     }
 
-     .container-merch {
+  .container-merch {
     
     background-color:#0282F9;
-   ;
     text-align: center;
     min-height: 100px;
   }

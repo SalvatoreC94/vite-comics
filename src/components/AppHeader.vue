@@ -22,12 +22,12 @@
   <style scoped>
   .logo {
     width: 70px;
+    margin-left: 70px;
   }
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
   }
   ul {
     list-style: none;
